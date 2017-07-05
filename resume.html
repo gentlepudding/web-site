@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Resume</title>
+    <link rel="stylesheet" href="resume.css">
+    <link href="https://fonts.googleapis.com/css?family=Yeseva+One" rel="stylesheet">
+</head>
+<body>
+    <div class="wrapper">
+        <header class="header">
+            <img class="my-photo" src="maria.jpg" alt="maria's photo">
+            <h1 class="header__title">Мария Парадеева</h1>
+            <p class="header__text"> Я люблю и умею учиться, а главное - применять знания на практике.<br>
+                Кроме того, предпочитаю делать свою работу хорошо.</p>
+        </header>
+        <nav class="navigation"> 
+            <a href="#education" class="navigation__link">Образование</a>
+            <a href="#experience" class="navigation__link">Опыт работы</a>
+            <a href="#knowledge" class="navigation__link">Знания</a>
+            <a href="#about" class="navigation__link">О себе</a>
+            <a href="#wishes" class="navigation__link">Мои пожелания</a>
+        </nav>
+        <main class="main-content">
+            <article class="content">
+                <a name="education" class="content__link">Образование</a>
+                <ul class="content__education">
+                    <li>1. Уральский государственный горный университет,
+                    Инженерно-экономический факультет, магистр по направлению "Менеджмент" 
+                    (cпециальность "Управление персоналом"), 2010 год</li>
+                    <li>2. Уральский государственный юридический университет,
+                    Вечерний факультет, бакалавр по направлению "Юриспруденция", 2014 год</li>
+                    <li>3. Курсы по HTML,CSS в html-academy, 2016-2017 гг</li>
+                </ul>
+            </article>
+            <article class="content">
+                <a name="experience" class="content__link">Опыт работы</a>
+                <table class="content__experience">
+                    <tr><td>04.2008 — 10.2010</td><td>менеджер по персоналу</td>
+                    <td>Центр фитнеса и красоты</td></tr>
+                    <tr "content__experience_element"><td>10.2010 — 01.2011</td><td>консультант по подбору персонала</td> 
+                    <td>OOO "Нова"</td></tr>
+                    <tr"content__experience_element"><td>01.2011 — 01.2015</td><td>менеджер по персоналу</td>
+                    <td>Уральский государственный юридический университет</td></tr>
+                    <tr "content__experience_element"><td>02.2015 — по настоящее время</td><td>юрист</td>
+                    <td>Уральский филиал ФГБУ "Авиаметтелеком Росгидромета"</td></tr>
+                </table>
+            </article>
+            <article class="content">
+                <a name="knowledge" class="content__link">Знания и умения</a>
+                <ul class="content__knowledge">
+                    <li>HTML/CSS: преимущественно теоретические, практические навыки получала
+                    на курсах html-academy и в процессе верстки своих учебных макетов</li>
+                    <li>Умение работать с git</li>
+                    <li>БЭМ</li>
+                    <liУмение работать в различных редакторах кода: sublime, brackets, visual code</li>
+                    <li>Умение находить информацию и решать задачи</li>
+                    <li>Базовые знания swift</li>
+                    <li>Могу в довольно короткое время осваивать новый материал и технологии</li>
+                    <li>Английский язык - pre intermediate, продолжаю обучение в лингвистичесой школе</li>
+            </article>
+            <article class="content">
+                <a name="about" class="content__link">О себе</a>
+                <p class="content__about">"Моё знакомство с CSS, HTML случилось давно. 
+                Методическое обучение началось с книги Джон Дакетт "HTML и CSS. Разработка и создание сайтов".
+                Кроме того, прошла курсы в html-academy. В процессе самообучения сделала несколько учебных проектов.</p>
+                <p class="content__about">Жизненные обстоятельства менялись, менялись приоритеты, обучение временами 
+                приостанавливалось. При этом я никогда не теряла интерес к технологиям. Периодически появлялись книги, 
+                попадались статьи, а особенно помог сохранять бодрость и оставаться в теме подкаст "Веб-стандарты".</p>
+                <p class="content__about">В очередной раз, вернуться к изучению СSS и HTML я решила, вооружившись книгой 
+                Lea Verou «CSS Secrets: Better Solutions to Everyday Web Design Problems». 
+                В планах поэтапное и детальное изучение CSS3, JS".</p>
+            </article>
+            <article class="content">
+                <a name="wishes" class="content__link">Мои пожелания</a>
+                <p class="content__wish">Поскольку я - начинающий специалист, мне хотелось бы попасть 
+                в интересную команду и по возможности работать стажером рядом с опытным наставником.</p>
+                <p class="content__wish">А ещё, я - молодая мама : ) Сыну недавно исполнился 1 год. Поэтому для меня 
+                крайне важен гибкий график или сокращенный рабочий день или удаленная работа. В остальном, буду рада любым предложениям.</p>
+            </article>
+        </main>
+        <aside class="portfolio">
+            <h3 class="portfolio__header">Учебные проекты</h3>
+            <div class="portfolio__project">
+                <a href="https://gentlepudding.github.io/photo-layout/">
+                <img class="portfolio__project-image" src="example1.png" alt="example of work"></a>
+            </div>
+            <div class="portfolio__project">
+                <a href="https://github.com/gentlepudding/mobile-app-interface">
+                <img class="portfolio__project-image" src="example2.png" alt="example of work"></a>
+            </div>
+            <div class="portfolio__project">
+                <a href="https://github.com/gentlepudding/mobile-app-interface">
+                <img class="portfolio__project-image" src="example3.png" alt="example of work"></a>
+            </div>
+        </aside>
+        <footer class="footer">
+            <a class="footer__mail" href="mailto: gentlepudding@gmail.com"><img class="footer__mail_icon" src="icon gmail.png"></a>
+            <span class="footer__phone">Звоните: +79126635893</span>
+        </footer>
+    </div>
+</body>
+</html>
