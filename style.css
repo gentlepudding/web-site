@@ -19,7 +19,7 @@ body {
 .header {
     grid-column: 1 / 4;
     grid-row: 1;
-    background-image: url(background.jpg);
+    background-image: url(background.JPG);
     background-size: 100% 100%;
     background-repeat: no-repeat;
     height: 670px;
