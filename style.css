@@ -18,22 +18,22 @@ body {
 .header {
     grid-column: 1 / 4;
     grid-row: 1;
-    background-image: url(background.JPG);
-    background-size: 100% 100%;
-    background-repeat: no-repeat;
-    height: 670px;
     filter: saturate(2);
+    background: url(background.JPG) no-repeat center center;
+    background-size: cover;
+    height: 100vh;
 }
 
 .header__title {
     font-size: 50px;
-    margin: 270px 0 20px 50px;
+    margin: 180px 62% 20px 50px;
 }
 
 .header__text {
     font-size: 22px;
-    margin-left: 50px;
+    margin: 0 62% 0 50px;
     font-style: italic;
+    max-width: 420px;
 }
 
 .main-content {
@@ -143,4 +143,68 @@ td:last-child {
 .footer__social_icon {
     width: 40px;
     height: 40px;
+}
+
+@media (max-width: 1200px) {
+    .header__title {
+        margin-top: 1em;
+    }
+
+    .content {
+        grid-template-columns: 1fr;
+        margin: 1.5em 1em 0;
+        padding: 0 0 .3em;
+    }
+
+    .content__title {
+        margin: 0;
+    }
+
+    .content__wish {
+        margin: 0;
+    }
+
+    .content__knowledge,
+    .content__education,
+    .content__about {
+        margin-left: 0;
+    }
+
+    .personal-photo {
+        margin: .5em 0 0;
+    }
+
+    .footer {
+        margin-left: 2em;
+    }
+
+    .portfolio__project-image {
+        width: auto;
+        height: auto;
+        object-fit: cover;
+        width: 100%;
+    }
+}
+
+@media (max-width: 1000px) {
+    .header:before {
+        content: '';
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        background-image: linear-gradient(to bottom,rgba(255,255,255,1),rgba(255,255,255,0));
+    }
+
+    .header__title {
+        margin-right: 50px;
+        position: relative;
+    }
+
+    .header__text {
+        max-width: none;
+        margin-right: 50px;
+        position: relative;
+    }
 }
