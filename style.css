@@ -131,16 +131,11 @@ td:last-child {
 }
 
 .footer {
-    /*margin: 10px 10px 10px 90px;*/
     grid-column: 1 / 3;
     grid-row: 4;
 }
-/*
-.footer__mail {
-    display: inline-block;
-}*/
 
-.footer__mail_icon {
-    width: 40px;
-    height: 40px;
+.ya-share2 {
+    margin-left: 20px;
+    margin-bottom: 20px;
 }
