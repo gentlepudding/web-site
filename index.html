@@ -5,27 +5,30 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Resume</title>
-    <link rel="stylesheet" href="resume.css">
-    <link href="https://fonts.googleapis.com/css?family=Yeseva+One" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Cormorant+Infant" rel="stylesheet">
+    <script src="//yastatic.net/es5-shims/0.0.2/es5-shims.min.js"></script>
+    <script src="//yastatic.net/share2/share.js"></script>
 </head>
 <body>
     <div class="wrapper">
         <header class="header">
-            <img class="my-photo" src="maria.jpg" alt="maria's photo">
             <h1 class="header__title">Мария Парадеева</h1>
-            <p class="header__text"> Я люблю и умею учиться, а главное - применять знания на практике.<br>
-                Кроме того, предпочитаю делать свою работу хорошо.</p>
+            <p class="header__text">Я люблю и умею учиться,<br>
+            а также применять знания на практике.<br>
+            Предпочитаю делать свою работу хорошо.</p>
         </header>
         <main class="main-content">
             <article class="content">
-                <a name="wishes" class="content__link">Мои пожелания</a>
-                <p class="content__wish">Поскольку я - начинающий специалист, мне хотелось бы попасть 
-                в интересную команду и по возможности работать стажером рядом с опытным наставником.</p>
-                <p class="content__wish">А ещё, я - молодая мама : ) Сыну недавно исполнился 1 год. Поэтому для меня 
-                крайне важен гибкий график или сокращенный рабочий день или удаленная работа. В остальном, буду рада любым предложениям.</p>
+                <h2 class="content__title"> Мои пожелания</h2>
+                <p class="content__wish">Я - начинающий специалист, поэтому мне хотелось бы попасть 
+                в интересную команду и по возможности работать стажером рядом с опытным наставником.
+                А ещё, я - мама. Сыну недавно исполнился 1 год. Поэтому для меня
+                крайне важен гибкий график или сокращенный рабочий день или удаленная работа. 
+                В остальном, буду рада любым предложениям.</p>
             </article>
             <article class="content">
-                <a name="knowledge" class="content__link">Знания и умения</a>
+                <h2 class="content__title">Знания и умения</h2>
                 <ul class="content__knowledge">
                     <li>HTML/CSS: преимущественно теоретические, практические навыки получала
                     на курсах html-academy и в процессе верстки своих учебных макетов</li>
@@ -37,23 +40,39 @@
                     <li>Могу в довольно короткое время осваивать новый материал и технологии</li>
                     <li>Английский язык - pre intermediate, продолжаю обучение в лингвистичесой школе</li>
             </article>
+            <div class="portfolio>">
+                <h2 class="portfolio__title">Учебные проекты</h2>
+                    <div class="portfolio__project">
+                        <a href="https://gentlepudding.github.io/photo-layout/">
+                        <img class="portfolio__project-image" src="example1.png" alt="example of work"></a>
+                    </div>
+                    <div class="portfolio__project">
+                        <a href="https://gentlepudding.github.io/960-grid-system/">
+                        <img class="portfolio__project-image" src="example2.png" alt="example of work"></a>
+                    </div>
+                    <div class="portfolio__project">
+                        <a href="https://gentlepudding.github.io/parallax/">
+                        <img class="portfolio__project-image" src="example3.png" alt="example of work"></a>
+                    </div>
+                    <div class="portfolio__project">
+                        <a href="https://gentlepudding.github.io/page-for-artsofte/">
+                        <img class="portfolio__project-image" src="example4.png" alt="example of work"></a>
+                    </div>
+                    <div class="portfolio__project">
+                        <a href="https://gentlepudding.github.io/blog/">
+                        <img class="portfolio__project-image" src="example5.png" alt="example of work"></a>
+                    </div>
+                    <div class="portfolio__project">   
+                        <a href="https://github.com/gentlepudding/mobile-app-interface">
+                        <img class="portfolio__project-image" src="example6.png" alt="example of work"></a>
+                    </div>
+                    <!--<div class="portfolio__project">
+                        <a href="https://github.com/gentlepudding/mobile-app-interface">
+                        <img class="portfolio__project-image" src="example7.png" alt="example of work"></a>
+                    </div>-->
+            </div>
             <article class="content">
-                <a class="content__link">Учебные проекты</a>
-                <div class="portfolio__project">
-                    <a href="https://gentlepudding.github.io/photo-layout/">
-                    <img class="portfolio__project-image" src="example1.png" alt="example of work"></a>
-                </div>
-                <div class="portfolio__project">
-                    <a href="https://github.com/gentlepudding/mobile-app-interface">
-                    <img class="portfolio__project-image" src="example2.png" alt="example of work"></a>
-                </div>
-                <div class="portfolio__project">
-                    <a href="https://github.com/gentlepudding/mobile-app-interface">
-                    <img class="portfolio__project-image" src="example3.png" alt="example of work"></a>
-                </div>
-            </article>
-            <article class="content">
-                <a name="education" class="content__link">Образование</a>
+                <h2 class="content__title">Образование</h2>
                 <ol class="content__education">
                     <li>Уральский государственный горный университет, 
                         магистр по направлению "Менеджмент" 
@@ -64,21 +83,27 @@
                 </ol>
             </article>
             <article class="content">
-                <a name="about" class="content__link">О себе</a>
-                <p class="content__about">"Моё знакомство с CSS, HTML случилось давно. 
+                <h2 class="content__title">O ceбе<img class="personal-photo" src="maria.jpg"></h2>
+                <p class="content__about">Моё знакомство с CSS, HTML случилось давно. 
                 Методическое обучение началось с книги Джон Дакетт "HTML и CSS. Разработка и создание сайтов".
-                Кроме того, прошла курсы в html-academy. В процессе самообучения сделала несколько учебных проектов.</p>
-                <p class="content__about">Жизненные обстоятельства менялись, менялись приоритеты, обучение временами 
+                Кроме того, прошла курсы в html-academy. В процессе самообучения сделала несколько учебных проектов.
+                Жизненные обстоятельства менялись, менялись приоритеты, обучение временами 
                 приостанавливалось. При этом я никогда не теряла интерес к технологиям. Периодически появлялись книги, 
-                попадались статьи, а особенно помог сохранять бодрость и оставаться в теме подкаст "Веб-стандарты".</p>
-                <p class="content__about">В очередной раз, вернуться к изучению СSS и HTML я решила, вооружившись книгой 
+                попадались статьи, а особенно помог сохранять бодрость и оставаться в теме подкаст "Веб-стандарты".
+                В очередной раз, вернуться к изучению СSS и HTML я решила, вооружившись книгой 
                 Lea Verou «CSS Secrets: Better Solutions to Everyday Web Design Problems». 
                 В планах поэтапное и детальное изучение CSS3, JS".</p>
             </article>
         </main>
-        <footer class="footer">
-            <a class="footer__mail" href="mailto: gentlepudding@gmail.com"><img class="footer__mail_icon" src="icon gmail.png"></a>
-        </footer>
+            <div class="ya-share2" data-services="vkontakte,facebook,gplus,twitter,skype,telegram" data-limit="3"></div>
+            <!--<a class="footer__mail" href="mailto: gentlepudding@gmail.com">
+            <img class="footer__mail_icon" src="icon gmail.png"></a>
+            <a class="footer__mail" href="https://www.facebook.com/profile.php?id=100016188398903">
+            <img class="footer__mail_icon" src="icon gmail.png"></a>
+            <a class="footer__mail" href="https://www.facebook.com/profile.php?id=100016188398903">
+            <img class="footer__mail_icon" src="icon gmail.png"></a>
+            <a class="footer__mail" href="https://twitter.com/gentlepudding">
+            <img class="footer__mail_icon" src="icon gmail.png"></a>-->
     </div>
 </body>
 </html>
